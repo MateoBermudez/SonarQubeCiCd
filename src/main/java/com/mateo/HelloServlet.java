@@ -1,6 +1,5 @@
 package com.mateo;
 
-import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.*;
@@ -18,7 +17,7 @@ public class HelloServlet extends HttpServlet {
             out.println("<p>Desplegado con Jenkins + Tomcat</p>");
             out.println("</body></html>");
         } catch (IOException e) {
-            e.printStackTrace();
+            // Ignored
         }
     }
 }
