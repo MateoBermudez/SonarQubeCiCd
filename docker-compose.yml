@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
 
   jenkins:
@@ -17,14 +15,13 @@ services:
       - ci-network
 
   tomcat:
-    image: tomcat:9.0
+    build:
+      context: .
+      dockerfile: Dockerfile.tomcat
     container_name: tomcat
     restart: on-failure
     ports:
       - "8090:8080"
-    volumes:
-      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
-      - ./context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
     networks:
       - ci-network
 

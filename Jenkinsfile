@@ -67,7 +67,7 @@ pipeline {
         success {
             echo '✅ Pipeline exitoso - Regla cumplida'
             mail(
-                to: 'tuemail@gmail.com',
+                to: 'mateber29@gmail.com',
                 subject: "✅ [Jenkins] Build #${env.BUILD_NUMBER} - Regla SonarQube CUMPLIDA",
                 body: """
 El proyecto mi-app pasó exitosamente la regla de SonarQube.
