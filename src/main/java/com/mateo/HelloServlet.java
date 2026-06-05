@@ -9,14 +9,16 @@ import java.io.*;
 public class HelloServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         resp.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = resp.getWriter()) {
+        try {
+            PrintWriter out = resp.getWriter();
             out.println("<html lang=\"es\"><body>");
             out.println("<h1>Hola desde Mateo's App!</h1>");
             out.println("<p>Desplegado con Jenkins + Tomcat</p>");
             out.println("</body></html>");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
