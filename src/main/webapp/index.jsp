@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--<title>Mi App Java - Pipeline CI/CD</title>-->
+    <title>Mi App Java - Pipeline CI/CD</title>
 </head>
 <body>
 <h1>Mi App Java - Pipeline CI/CD</h1>
