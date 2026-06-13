@@ -70,12 +70,12 @@ pipeline {
                 to: 'mateber29@gmail.com',
                 subject: "✅ [Jenkins] Build #${env.BUILD_NUMBER} - Regla SonarQube CUMPLIDA",
                 body: """
-El proyecto mi-app pasó exitosamente la regla de SonarQube.
+                El proyecto mi-app pasó exitosamente la regla de SonarQube.
 
-Build: #${env.BUILD_NUMBER}
-Branch: ${env.GIT_BRANCH}
-URL del build: ${env.BUILD_URL}
-SonarQube: http://localhost:9000/dashboard?id=mi-app
+                Build: #${env.BUILD_NUMBER}
+                Branch: ${env.GIT_BRANCH}
+                URL del build: ${env.BUILD_URL}
+                SonarQube: http://localhost:9000/dashboard?id=mi-app
                 """
             )
         }
@@ -85,14 +85,14 @@ SonarQube: http://localhost:9000/dashboard?id=mi-app
                 to: 'mateber29@gmail.com',
                 subject: "❌ [Jenkins] Build #${env.BUILD_NUMBER} - Regla SonarQube NO CUMPLIDA",
                 body: """
-El proyecto mi-app NO cumplió la regla de SonarQube.
+                El proyecto mi-app NO cumplió la regla de SonarQube.
 
-Build: #${env.BUILD_NUMBER}
-Branch: ${env.GIT_BRANCH}
-URL del build: ${env.BUILD_URL}
-SonarQube: http://localhost:9000/dashboard?id=mi-app
+                Build: #${env.BUILD_NUMBER}
+                Branch: ${env.GIT_BRANCH}
+                URL del build: ${env.BUILD_URL}
+                SonarQube: http://localhost:9000/dashboard?id=mi-app
 
-Por favor revise el análisis y corrija el código.
+                Por favor revise el análisis y corrija el código.
                 """
             )
         }
