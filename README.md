@@ -2,7 +2,7 @@
 
 Proyecto de demostración de un flujo de **integración y despliegue continuo (CI/CD)** para una aplicación Java/Maven, con análisis automático de calidad de código y notificaciones por correo según el resultado.
 
----
+---  
 
 ## Tecnologías utilizadas
 
